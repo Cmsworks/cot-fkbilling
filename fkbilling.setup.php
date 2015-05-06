@@ -3,7 +3,7 @@
 /* ====================
  * [BEGIN_COT_EXT]
  * Code=fkbilling
- * Name=fkbilling
+ * Name=Free-kassa
  * Category=Payments
  * Description=Free-kassa billing system
  * Version=1.0.0
