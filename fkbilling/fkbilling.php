@@ -30,6 +30,8 @@ if (empty($m))
 
 		cot_block($pinfo['pay_status'] == 'new' || $pinfo['pay_status'] == 'process');
 
+		$url = 'http://www.free-kassa.ru/merchant/cash.php';
+		
 		$mrh_id = $cfg['plugin']['fkbilling']['mrh_id'];
 		$mrh_secret1 = $cfg['plugin']['fkbilling']['mrh_secret1'];
 		$mrh_curr = $cfg['plugin']['fkbilling']['mrh_curr'];
