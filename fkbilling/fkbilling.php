@@ -43,7 +43,7 @@ if (empty($m))
 
 		$sign = md5($mrh_id.':'.$order_amount.':'.$mrh_secret1.':'.$order_id);
 
-		$post_opt = "m=" . $mrh_id . "&oa=" . $order_amount . "&o=" . $order_id . "&s=" . $sign . "&Shp_item=" . $us_item . "&i=" . $mrh_curr . "&lang=" . $lang;
+		$post_opt = "m=" . $mrh_id . "&oa=" . $order_amount . "&o=" . $order_id . "&s=" . $sign . "&us_item=" . $us_item . "&i=" . $mrh_curr . "&lang=" . $lang;
 
 		cot_payments_updatestatus($pid, 'process'); // Изменяем статус "в процессе оплаты"
 
