@@ -57,14 +57,7 @@ if (empty($m))
 }
 elseif ($m == 'success')
 {
-	$mrh_id = $cfg['plugin']['fkbilling']['mrh_id'];
-	$mrh_secret2 = $cfg['plugin']['fkbilling']['mrh_secret2'];
-
-	$sign = md5($_REQUEST['MERCHANT_ID'].':'.$_REQUEST['AMOUNT'].':'.$mrh_secret2.':'.$_REQUEST['MERCHANT_ORDER_ID']);
-	if($sign != $_REQUEST['SIGN']){
-		$plugin_body = $L['fkbilling_error_incorrect'];
-	}
-	else{
+	if($_REQUEST['MERCHANT_ORDER_ID']){
 		$pinfo = cot_payments_payinfo($_REQUEST['MERCHANT_ORDER_ID']);
 		if ($pinfo['pay_status'] == 'done')
 		{
