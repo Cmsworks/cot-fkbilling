@@ -35,8 +35,17 @@ if (empty($m))
 		$mrh_id = $cfg['plugin']['fkbilling']['mrh_id'];
 		$mrh_secret1 = $cfg['plugin']['fkbilling']['mrh_secret1'];
 		$mrh_curr = $cfg['plugin']['fkbilling']['mrh_curr'];
-		$order_id = $pid;
-		$order_amount = $pinfo['pay_summ']*$cfg['plugin']['fkbilling']['rate'];
+                $order_id = $pid;
+                $fkbilling_rate = $cfg['plugin']['fkbilling']['rate'];
+
+                /* === Hook === */
+                foreach (cot_getextplugins('fkbilling.rate') as $pl)
+                {
+                        include $pl;
+                }
+                /* ===== */
+
+                $order_amount = $pinfo['pay_summ'] * $fkbilling_rate;
 		$us_item = (!empty($pinfo['pay_code'])) ? $pinfo['pay_area'].'_'.$pinfo['pay_code'] : $pinfo['pay_area'];
 		$inv_desc = $pinfo['pay_desc'];
 		$lang = $usr['lang'];
