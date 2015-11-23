@@ -35,6 +35,7 @@ if (empty($m))
 		$mrh_id = $cfg['plugin']['fkbilling']['mrh_id'];
 		$mrh_secret1 = $cfg['plugin']['fkbilling']['mrh_secret1'];
 		$mrh_curr = $cfg['plugin']['fkbilling']['mrh_curr'];
+                $order_id = $pid;
                 $fkbilling_rate = $cfg['plugin']['fkbilling']['rate'];
 
                 /* === Hook === */
