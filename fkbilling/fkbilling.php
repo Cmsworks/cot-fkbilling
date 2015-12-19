@@ -36,7 +36,7 @@ if (empty($m))
 		$mrh_secret1 = $cfg['plugin']['fkbilling']['mrh_secret1'];
 		$mrh_curr = $cfg['plugin']['fkbilling']['mrh_curr'];
 		$order_id = $pid;
-		$order_amount = $pinfo['pay_summ']*$cfg['plugin']['fkbilling']['rate'];
+		$order_amount = number_format($pinfo['pay_summ']*$cfg['plugin']['fkbilling']['rate'], 2, '.', '');
 		$us_item = (!empty($pinfo['pay_code'])) ? $pinfo['pay_area'].'_'.$pinfo['pay_code'] : $pinfo['pay_area'];
 		$inv_desc = $pinfo['pay_desc'];
 		$lang = $usr['lang'];
