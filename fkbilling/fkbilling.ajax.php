@@ -28,7 +28,7 @@ function getIP(){
 	return $_SERVER['REMOTE_ADDR'];
 }
 
-if(!in_array(getIP(), array('5.9.72.245', '5.9.72.243', '5.9.29.230'))){
+if(!in_array(getIP(), array('136.243.38.147', '136.243.38.149', '136.243.38.150', '136.243.38.151', '136.243.38.189'))){
     echo "hacking attempt!";
 	exit();
 }
