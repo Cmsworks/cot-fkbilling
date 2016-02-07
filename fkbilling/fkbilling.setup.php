@@ -6,7 +6,7 @@
  * Name=Free-kassa
  * Category=Payments
  * Description=Free-kassa billing system
- * Version=1.0.0
+ * Version=1.1.0
  * Date=
  * Author=CMSWorks Team
  * Copyright=Copyright (c) CMSWorks.ru
