@@ -15,8 +15,8 @@ defined('COT_CODE') or die('Wrong URL.');
  * Plugin Config
  */
 $L['cfg_mrh_login'] = array('Ваш ID на Fre-kassa.ru');
-$L['cfg_mrh_pass1'] = array('Секретное слово #1 на Fre-kassa.ru');
-$L['cfg_mrh_pass2'] =  array('Секретное слово #2 на Fre-kassa.ru');
+$L['cfg_mrh_pass1'] = array('Секретное слово #1 на Free-kassa.ru');
+$L['cfg_mrh_pass2'] =  array('Секретное слово #2 на Free-kassa.ru');
 $L['cfg_mrh_curr'] = array('Идентификатор валюты');
 $L['cfg_rate'] = array('Соотношение суммы к валюте сайта');
 
