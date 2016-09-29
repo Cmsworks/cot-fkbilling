@@ -17,7 +17,9 @@ Copyright CMSWorks Team 2015
 В настройках магазина придумайте секретные слова и укажите следующие ссылки:
 
 URL оповещения: http://vashsite.com/index.php?r=fkbilling
+
 URL успешной оплаты: http://vashsite.com/index.php?e=fkbilling&m=success
+
 URL неуспешной оплаты: http://vashsite.com/index.php?e=fkbilling&m=fail
 
 Везде используется метод GET!
